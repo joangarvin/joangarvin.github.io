@@ -1,2 +1,4 @@
-'use strict';
-document.getElementById('year').textContent = new Date().getFullYear();
+"use strict";
+
+const footerYear = document.getElementById("year");
+footerYear.textContent = String(new Date().getFullYear());
