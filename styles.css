@@ -459,9 +459,11 @@ h2 > span {
   gap: 1rem;
 }
 
-.travel svg {
-  width: 100%;
+.project-logo {
+  display: block;
+  width: min(100%, 240px);
   height: auto;
+  margin: 1rem auto;
 }
 
 .project-content {
@@ -778,10 +780,6 @@ dd {
 
   .project-visual {
     min-height: 270px;
-  }
-
-  .travel svg {
-    max-height: 200px;
   }
 
   .section {
