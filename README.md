@@ -17,6 +17,8 @@ El JavaScript solo actualiza el año del pie de página.
 ## Editar
 
 - `index.html`: contenido, proyectos y enlaces.
+- `travseeker.html`: ficha pública de Travseeker, con contexto, aportación, arquitectura y capturas.
+- `assets/`: logo de Travseeker y capturas públicas de la aplicación.
 - `styles.css`: diseño adaptable a móvil, tableta y escritorio.
 - `script.js`: actualización del año del pie de página.
 - `Joan_Garvin_Cardona_CV.pdf`: versión pública del currículum, sin teléfono.
@@ -39,7 +41,7 @@ GitHub Pages publica la rama `main`, carpeta raíz `/`. Los cambios en esta rama
 
 ## Contenido
 
-Basado en el CV proporcionado por Joan y en los README públicos de sus proyectos. Los gráficos de proyectos son esquemas ilustrativos, no capturas de las aplicaciones. AirTrack no enlaza a un repositorio porque no se facilitó un enlace verificado.
+Basado en el CV proporcionado por Joan y en la documentación de los proyectos. Travseeker tiene una ficha pública con capturas reales de su aplicación y un enlace a https://travseeker.com/. Su código fuente se mantiene privado. Las capturas se tomaron el 26 de octubre de 2026 sin iniciar sesión y no contienen información de usuarios. Los gráficos de los otros proyectos son ilustrativos. AirTrack no enlaza a un repositorio porque no se facilitó un enlace verificado.
 
 ## Formato
 
@@ -48,13 +50,13 @@ Se usan dos espacios, archivos UTF-8 y finales de línea LF. `.editorconfig` con
 Para formatear los archivos, desde esta carpeta:
 
 ```sh
-npx prettier@3.9.10 --write index.html styles.css script.js favicon.svg README.md .prettierrc.json
+npx prettier@3.9.10 --write index.html travseeker.html styles.css script.js favicon.svg README.md .prettierrc.json
 ```
 
 Para comprobar el formato sin modificar archivos:
 
 ```sh
-npx prettier@3.9.10 --check index.html styles.css script.js favicon.svg README.md .prettierrc.json
+npx prettier@3.9.10 --check index.html travseeker.html styles.css script.js favicon.svg README.md .prettierrc.json
 ```
 
 Estos comandos requieren Node.js y npm. Prettier solo se utiliza para desarrollar; el portfolio publicado no lo necesita.

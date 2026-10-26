@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travseeker · Proyecto de Joan Garvin Cardona</title>
+    <meta
+      name="description"
+      content="Caso de proyecto de Travseeker: una aplicación web para descubrir destinos y planificar viajes. Mi aportación en React, TypeScript, Node.js y PostgreSQL."
+    />
+    <meta name="theme-color" content="#eeebff" />
+    <meta property="og:title" content="Travseeker · Desarrollo full stack" />
+    <meta
+      property="og:description"
+      content="El producto, mi aportación y la arquitectura general de una plataforma de viajes."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://joangarvin.github.io/travseeker.html" />
+    <meta property="og:image" content="https://joangarvin.github.io/assets/travseeker-home.png" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <header class="header wrap">
+      <!-- prettier-ignore -->
+      <a class="wordmark" href="index.html" aria-label="Joan Garvin, inicio">joan<span>garvin</span><span class="brand-dot">.</span></a>
+      <nav aria-label="Principal">
+        <a href="index.html#proyectos">Proyectos</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+    </header>
+    <main id="contenido" class="case-study wrap">
+      <a class="text-link" href="index.html#proyectos">Volver a los proyectos</a>
+
+      <section class="case-intro" aria-labelledby="project-title">
+        <div>
+          <p class="eyebrow">CASO DE PROYECTO · DESARROLLO FULL STACK</p>
+          <h1 id="project-title">Travseeker</h1>
+          <p class="case-lead">Elegir dónde viajar, con más contexto.</p>
+          <p class="case-summary">
+            Una aplicación web para descubrir destinos turísticos en España, comparar opciones y
+            organizar itinerarios. El proyecto está en desarrollo desde 2026 y se puede visitar en
+            su web pública.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://travseeker.com/">
+              Visitar Travseeker
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button secondary" href="#mi-aportacion">
+              Ver mi aportación
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+          <p class="case-access">
+            El código fuente se mantiene en un repositorio privado para proteger la implementación
+            del producto. Esta ficha presenta el producto y mi trabajo técnico.
+          </p>
+        </div>
+        <img
+          class="case-logo"
+          src="assets/travseeker-bird.png"
+          alt="Logo de Travseeker: pájaro azul en vuelo"
+          width="814"
+          height="716"
+        />
+      </section>
+
+      <figure class="case-screenshot">
+        <img
+          src="assets/travseeker-home.png"
+          alt="Inicio de Travseeker con búsqueda de destinos, filtros de presupuesto, afluencia y temporada, y destinos destacados."
+          width="1280"
+          height="720"
+        />
+        <figcaption>
+          Interfaz pública de inicio, capturada el 26 de octubre de 2026. La aplicación sigue
+          evolucionando.
+        </figcaption>
+      </figure>
+
+      <section class="case-section case-columns" aria-labelledby="context-title">
+        <div>
+          <p class="eyebrow">EL PROBLEMA</p>
+          <h2 id="context-title">De una idea de viaje a una decisión.</h2>
+        </div>
+        <div>
+          <p>
+            Elegir un destino implica valorar más que sus fotografías: el presupuesto, la afluencia
+            y la temporada también influyen. Travseeker reúne esa información para ayudar a explorar
+            alternativas antes de organizar el viaje.
+          </p>
+          <p>
+            El recorrido conecta el descubrimiento de destinos con su comparación y la planificación
+            de itinerarios.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="features-title">
+        <p class="eyebrow">EL PRODUCTO</p>
+        <h2 id="features-title">Qué permite hacer.</h2>
+        <dl class="case-features">
+          <div>
+            <dt>Descubrir destinos</dt>
+            <dd>
+              Buscar por destino, municipio, actividad o tipo de viaje y acotar opciones por
+              presupuesto, afluencia y temporada.
+            </dd>
+          </div>
+          <div>
+            <dt>Explorar el contexto</dt>
+            <dd>
+              Consultar fichas de destino y municipios, información del lugar y mapas interactivos.
+            </dd>
+          </div>
+          <div>
+            <dt>Comparar alternativas</dt>
+            <dd>
+              Reunir varios destinos en una vista para contrastar sus características antes de
+              elegir.
+            </dd>
+          </div>
+          <div>
+            <dt>Organizar el viaje</dt>
+            <dd>
+              Guardar favoritos y trabajar con colecciones e itinerarios vinculados a una cuenta de
+              usuario.
+            </dd>
+          </div>
+        </dl>
+        <figure class="case-screenshot">
+          <img
+            src="assets/travseeker-compare.png"
+            alt="Comparador de Travseeker con Costa Blanca y Pinares de Soria y Burgos, mostrando información de los destinos en paralelo."
+            width="1280"
+            height="720"
+            loading="lazy"
+          />
+          <figcaption>Comparación de dos destinos desde la interfaz pública.</figcaption>
+        </figure>
+      </section>
+
+      <section
+        class="case-section case-columns"
+        id="mi-aportacion"
+        aria-labelledby="contribution-title"
+      >
+        <div>
+          <p class="eyebrow">MI APORTACIÓN</p>
+          <h2 id="contribution-title">De la interfaz a los datos.</h2>
+        </div>
+        <div>
+          <p>
+            Participo en el desarrollo full stack de Travseeker. Mi trabajo conecta las pantallas
+            que utiliza el visitante con una API REST y una base de datos relacional.
+          </p>
+          <ul class="case-list">
+            <li>
+              <strong>Frontend:</strong>
+              desarrollo de la interfaz con React y TypeScript, búsqueda y filtros, mapas y
+              adaptación a distintos tamaños de pantalla.
+            </li>
+            <li>
+              <strong>Backend:</strong>
+              desarrollo de una API REST con Node.js y Express para consultar y gestionar destinos e
+              itinerarios.
+            </li>
+            <li>
+              <strong>Datos:</strong>
+              trabajo con Prisma y PostgreSQL para el acceso y la persistencia de la información.
+            </li>
+            <li>
+              <strong>Calidad:</strong>
+              incorporación de pruebas automatizadas de frontend y backend con el runner de Node.js.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="architecture-title">
+        <p class="eyebrow">ARQUITECTURA GENERAL</p>
+        <h2 id="architecture-title">Tres capas que trabajan juntas.</h2>
+        <ol class="case-architecture">
+          <li>
+            <span>Interfaz</span>
+            <h3>React + TypeScript</h3>
+            <p>
+              Presenta los destinos y recoge las búsquedas, filtros y acciones del usuario. Vite
+              prepara la aplicación para desarrollo y producción.
+            </p>
+          </li>
+          <li>
+            <span>API REST</span>
+            <h3>Node.js + Express</h3>
+            <p>
+              Recibe las peticiones, aplica las reglas de la aplicación y coordina el acceso a la
+              información.
+            </p>
+          </li>
+          <li>
+            <span>Persistencia</span>
+            <h3>Prisma + PostgreSQL</h3>
+            <p>Gestiona las consultas y almacena los datos que necesita la plataforma.</p>
+          </li>
+        </ol>
+        <p class="case-access">Vista conceptual del sistema para explicar el proyecto.</p>
+      </section>
+
+      <section class="case-section case-columns" aria-labelledby="decisions-title">
+        <div>
+          <p class="eyebrow">DECISIONES TÉCNICAS</p>
+          <h2 id="decisions-title">Cómo se organiza el trabajo.</h2>
+        </div>
+        <div>
+          <h3>Responsabilidades separadas</h3>
+          <p>
+            La interfaz, la API y la persistencia tienen funciones distintas. En el frontend, la
+            organización por funcionalidades agrupa los componentes y la lógica de cada área. En el
+            backend, las rutas, los controladores y los servicios separan la entrada de una petición
+            de su resolución.
+          </p>
+          <h3>Una experiencia adaptable</h3>
+          <p>
+            El diseño responsive permite consultar destinos y planificar desde pantallas de
+            distintos tamaños. TypeScript ayuda a describir los datos y las relaciones entre las
+            piezas del frontend.
+          </p>
+          <h3>Comprobaciones durante el desarrollo</h3>
+          <p>
+            El proyecto dispone de pruebas de frontend y backend, revisión del código y compilación
+            de producción. Estas comprobaciones ayudan a detectar errores al introducir cambios.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section case-columns" aria-labelledby="status-title">
+        <div>
+          <p class="eyebrow">ESTADO Y ALCANCE</p>
+          <h2 id="status-title">Un producto en evolución.</h2>
+        </div>
+        <div>
+          <p>
+            Travseeker tiene una web pública y continúa en desarrollo. Las capturas muestran la
+            interfaz disponible en la fecha indicada; algunas funciones, como guardar destinos o
+            gestionar viajes, requieren iniciar sesión.
+          </p>
+          <p>
+            Esta presentación permite conocer el producto y mi aportación manteniendo privado su
+            código fuente.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://travseeker.com/">
+              Explorar la aplicación
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button secondary" href="index.html#contacto">
+              Contactar conmigo
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer wrap">
+      <p>
+        ©
+        <span id="year">2026</span>
+        Joan Garvin Cardona
+      </p>
+      <nav aria-label="Más información">
+        <a href="index.html">Portfolio</a>
+        <a href="https://www.linkedin.com/in/joangarvincardona/">LinkedIn</a>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

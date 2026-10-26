@@ -962,3 +962,180 @@ dd {
     animation: none !important;
   }
 }
+
+/* Travseeker project case study */
+.case-study {
+  padding-top: 2rem;
+}
+
+.case-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  align-items: center;
+  gap: 4rem;
+  padding-block: 3.5rem;
+}
+
+.case-intro h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1.1;
+  letter-spacing: -0.06em;
+}
+
+.case-intro .eyebrow {
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.case-lead {
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.case-summary {
+  max-width: 42rem;
+  color: var(--color-text-muted);
+}
+
+.case-access {
+  margin-top: 1.5rem;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  max-width: 44rem;
+}
+
+.case-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.case-screenshot {
+  margin: 0;
+}
+
+.case-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--card-radius);
+}
+
+.case-screenshot figcaption {
+  margin-top: 0.75rem;
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+}
+
+.case-section {
+  border-bottom: 1px solid var(--color-border);
+  padding-block: 4rem;
+}
+
+.case-section:last-child {
+  border-bottom: 0;
+}
+
+.case-section h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.case-section h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.case-section p {
+  color: var(--color-text-muted);
+}
+
+.case-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 4rem;
+}
+
+.case-columns > div > :first-child {
+  margin-top: 0;
+}
+
+.case-features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 3rem;
+  margin-block: 2.5rem;
+}
+
+.case-features dt {
+  font-size: 1.05rem;
+}
+
+.case-features dd {
+  margin-top: 0.5rem;
+}
+
+.case-list {
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+.case-list li + li {
+  margin-top: 1rem;
+}
+
+.case-architecture {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  padding: 0;
+  margin: 2.5rem 0 0;
+  list-style: none;
+}
+
+.case-architecture li {
+  background: var(--color-lilac);
+  border-radius: var(--card-radius);
+  padding: 1.5rem;
+}
+
+.case-architecture span {
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.case-architecture h3 {
+  margin-top: 0.5rem;
+}
+
+.case-architecture p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .case-intro {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    padding-block: 2.5rem;
+  }
+
+  .case-logo {
+    width: 120px;
+  }
+
+  .case-columns,
+  .case-features,
+  .case-architecture {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  .case-section {
+    padding-block: 2.5rem;
+  }
+}
